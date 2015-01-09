@@ -5,4 +5,7 @@ app.config(['$routeProvider', function($routeProvider) {
 		templateUrl: 'templates/home.html',
 		controller: 'HomeCtrl'
 	});
+	$routeProvider.otherwise({
+		redirectTo: '/'
+	});
 }]);
