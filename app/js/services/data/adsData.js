@@ -4,7 +4,7 @@ app.factory('adsData', ['$resource', 'baseServiceUrl', function($resource, baseS
 	});
 
 	function getPublicAds() { //pageSize, currentPage
-		return resource.query();
+		return resource.get();
 	}
 
 	function editAd(adId, ad) {
