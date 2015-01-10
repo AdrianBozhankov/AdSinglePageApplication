@@ -3,6 +3,13 @@
 	<ul ng-cloak>
 		<li ng-repeat="ad in adsData.ads">
 			{{ad.title}}
+			{{ad.date | date : "dd-MMM-yyyy"}}
+			<br />
+			<img width="100px" ng-src="{{ad.imageDataUrl}}">
+			{{ad.text}}
+			{{ad.ownerName}}
+			{{ad.ownerEmail}}
+			{{ad.ownerPhone}}
 		</li>
 	</ul>
 </div>
