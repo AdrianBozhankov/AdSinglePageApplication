@@ -9,3 +9,15 @@ ul {
 li {
 	border: 1px solid black;
 }
+
+.left {
+	text-align: left;
+	display: inline-block;
+	width: 45%;
+}
+
+.right {
+	text-align: right;
+	display: inline-block;
+	width: 54%;
+}

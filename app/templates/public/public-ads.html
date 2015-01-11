@@ -2,14 +2,18 @@
 	<img src="images/loading.gif" ng-hide="ready">
 	<ul ng-cloak>
 		<li ng-repeat="ad in adsData.ads">
-			{{ad.title}}
-			{{ad.date | date : "dd-MMM-yyyy"}}
+			<div class="left">{{ad.title}}</div>
+			<div class="right">{{ad.date | date : "dd-MMM-yyyy"}}</div>
 			<br />
 			<img width="100px" ng-src="{{ad.imageDataUrl}}">
+			<br />
 			{{ad.text}}
-			{{ad.ownerName}}
-			{{ad.ownerEmail}}
-			{{ad.ownerPhone}}
+			<br />
+			Name: {{ad.ownerName}}
+			<br />
+			Email: {{ad.ownerEmail}}
+			<br />
+			Tel.: {{ad.ownerPhone}}
 		</li>
 	</ul>
 </div>
