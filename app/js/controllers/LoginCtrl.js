@@ -6,4 +6,8 @@ app.controller('LoginCtrl', ['$scope', '$location', 'userData', function($scope,
 			$location.path('/');
 		});
 	};
+
+	$scope.cancelLogin = function() {
+		$location.path('/');
+	};
 }]);

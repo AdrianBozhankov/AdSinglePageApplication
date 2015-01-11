@@ -9,6 +9,5 @@ app.controller('CategoriesCtrl', ['$scope', '$rootScope', 'categoriesData', 'fil
 	$scope.categoryClicked = function categoryClicked(category) {
 		filter.filterByCategory(category);
 		$rootScope.$broadcast('categoryClicked', category);
-
 	};
 }]);

@@ -21,3 +21,13 @@ li {
 	display: inline-block;
 	width: 54%;
 }
+
+header h1 {
+	padding-left: 500px;
+}
+
+.logoutField {
+	display: inline-block;
+	text-align: right;
+	padding-left: 300px;
+}
